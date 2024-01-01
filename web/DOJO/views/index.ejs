@@ -1,0 +1,29 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开始游戏</title>
+  <style>
+    body {
+      background-image: url('/logo.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      text-align:center;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <form action="/connect" method="post">
+    <label for="name">Your Wallet Address：<br></label>
+    <input type="text" id="name" name="name"><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
